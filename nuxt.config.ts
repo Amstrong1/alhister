@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
-  devtools: { enabled: true },
+export default ({
+  devtools: { enabled: false },
+  target: 'server',
 
   pages: true,
   modules: [
@@ -19,9 +20,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Nuxt 3 Minimal Starter',
+      title: 'Alhister',
       meta: [
-        { name: 'description', content: 'Nuxt 3 Minimal Starter' }
+        { name: 'description', content: 'Lunetterie en ligne' }
       ],
       script: [
         { src: 'https://js.stripe.com/v3/', defer: true }
